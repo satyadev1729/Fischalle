@@ -2,75 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurant Home</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #fff9f2;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      background-color: #333;
+      color: white;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .language {
+      margin-right: 20px;
+    }
+
+    .main-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+    }
+
+    .link-box {
+      width: 300px;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .link-box:hover {
+      transform: scale(1.05);
+    }
+
+    .action-button {
+      font-size: 24px;
+      background: transparent;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div id="logo">
-      <a href="index.html">LOGO</a>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="bookings.html">Bookings</a></li>
-        <li><a href="daily-offer.html">Daily Offer</a></li>
-        <li>
-          Language:
-          <a href="#">EN</a> |
-          <a href="#">DE</a>
-        </li>
-      </ul>
+    <nav class="nav-links">
+      <a href="daily-offer.html">Daily Offer</a>
+      <a href="bookings.html">Bookings</a>
     </nav>
 
-    <!-- Burger Menu for mobile -->
-    <div id="menu-button">
-      <button aria-label="Menu">☰</button>
+    <div class="language">
+      <a href="#">EN</a> | <a href="#">DE</a>
+    </div>
+
+    <div class="menu-icon">
+      <button class="action-button">☰</button>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
+  <!-- Main Section: Image Links -->
+  <section class="main-links">
+    <a class="link-box" href="takeaway.html" style="background-image: url('images/takeaway.jpg');">
+      Take Away
+    </a>
 
-    <!-- Main Areas -->
-    <section>
-      <h2>Main Areas</h2>
-      <div>
-        <a href="#takeaway">Take Away</a> |
-        <a href="#gastro">Gastro</a>
-      </div>
-    </section>
-
-    <!-- Take Away -->
-    <section id="takeaway">
-      <h2>Take Away</h2>
-      <ul>
-        <li><a href="broetchen.html">Brötchen</a></li>
-        <li><a href="salat.html">Salat</a></li>
-        <li><a href="fresh-fish.html">Fresh Fish</a></li>
-      </ul>
-    </section>
-
-    <!-- Gastro -->
-    <section id="gastro">
-      <h2>Gastro</h2>
-      <ul>
-        <li><a href="vorspeise.html">Vorspeise</a></li>
-        <li><a href="fish-delicacies.html">Fish Delicacies</a></li>
-        <li><a href="kinder-essen.html">Kinder Essen</a></li>
-        <li><a href="drinks.html">Drinks</a></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <!-- Optional Footer -->
-  <footer>
-    <p>© 2025 Your Restaurant</p>
-  </footer>
+    <a class="link-box" href="gastro.html" style="background-image: url('images/gastro.jpg');">
+      Gastro
+    </a>
+  </section>
 
 </body>
 </html>
-
