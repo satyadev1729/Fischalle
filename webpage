@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurant Home</title>
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Header -->
   <header>
-    <div>
-      <a href="index.html">LOGO</a> <!-- with home action -->
+    <div id="logo">
+      <a href="index.html">LOGO</a>
     </div>
 
     <nav>
@@ -18,30 +19,31 @@
         <li><a href="daily-offer.html">Daily Offer</a></li>
         <li>
           Language:
-          <a href="#">EN</a> | <a href="#">DE</a>
+          <a href="#">EN</a> |
+          <a href="#">DE</a>
         </li>
       </ul>
     </nav>
 
-    <div>
-      <!-- Action Button (like burger menu for mobile) -->
-      <button>☰</button>
+    <!-- Burger Menu for mobile -->
+    <div id="menu-button">
+      <button aria-label="Menu">☰</button>
     </div>
   </header>
 
   <!-- Main Content -->
   <main>
 
-    <!-- Take Away & Gastro Main Links -->
+    <!-- Main Areas -->
     <section>
       <h2>Main Areas</h2>
       <div>
-        <a href="#takeaway">Take Away</a>
+        <a href="#takeaway">Take Away</a> |
         <a href="#gastro">Gastro</a>
       </div>
     </section>
 
-    <!-- TAKE AWAY Section -->
+    <!-- Take Away -->
     <section id="takeaway">
       <h2>Take Away</h2>
       <ul>
@@ -51,7 +53,7 @@
       </ul>
     </section>
 
-    <!-- GASTRO Section -->
+    <!-- Gastro -->
     <section id="gastro">
       <h2>Gastro</h2>
       <ul>
@@ -63,6 +65,11 @@
     </section>
 
   </main>
+
+  <!-- Optional Footer -->
+  <footer>
+    <p>© 2025 Your Restaurant</p>
+  </footer>
 
 </body>
 </html>
