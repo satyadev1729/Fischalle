@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Home</title>
+</head>
+<body>
 
+  <!-- Header Section -->
+  <header>
+    <div>
+      <a href="index.html">LOGO</a> <!-- with home action -->
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="daily-offer.html">Daily Offer</a></li>
+        <li>
+          Language:
+          <a href="#">EN</a> | <a href="#">DE</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- Action Button (like burger menu for mobile) -->
+      <button>☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Take Away & Gastro Main Links -->
+    <section>
+      <h2>Main Areas</h2>
+      <div>
+        <a href="#takeaway">Take Away</a>
+        <a href="#gastro">Gastro</a>
+      </div>
+    </section>
+
+    <!-- TAKE AWAY Section -->
+    <section id="takeaway">
+      <h2>Take Away</h2>
+      <ul>
+        <li><a href="broetchen.html">Brötchen</a></li>
+        <li><a href="salat.html">Salat</a></li>
+        <li><a href="fresh-fish.html">Fresh Fish</a></li>
+      </ul>
+    </section>
+
+    <!-- GASTRO Section -->
+    <section id="gastro">
+      <h2>Gastro</h2>
+      <ul>
+        <li><a href="vorspeise.html">Vorspeise</a></li>
+        <li><a href="fish-delicacies.html">Fish Delicacies</a></li>
+        <li><a href="kinder-essen.html">Kinder Essen</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer (optional) -->
+  <footer>
+    <p>© 2025 Your Restaurant Name</p>
+  </footer>
+
+</body>
+</html>
