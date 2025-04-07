@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Restaurant Home</title>
   <style>
     body {
-      font-family: sans-serif;
       margin: 0;
-      background-color: #fff9f2;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
     }
 
+    /* HEADER */
     header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 10px 30px;
-      background-color: #333;
+      align-items: center;
+      background: #222;
       color: white;
+      padding: 10px 30px;
     }
 
     .logo img {
@@ -25,14 +26,23 @@
 
     .nav-links a {
       color: white;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
     }
 
     .language {
-      margin-right: 20px;
+      margin-right: 15px;
     }
 
+    .menu-button {
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* MAIN SECTION */
     .main-links {
       display: flex;
       justify-content: center;
@@ -60,48 +70,41 @@
     .link-box:hover {
       transform: scale(1.05);
     }
-
-    .action-button {
-      font-size: 24px;
-      background: transparent;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
+    <!-- Logo -->
     <div class="logo">
       <a href="index.html">
-        <img src="images/logo.png" alt="Logo" />
+        <img src="images/logo.png" alt="Restaurant Logo">
       </a>
     </div>
 
+    <!-- Nav Links -->
     <nav class="nav-links">
-      <a href="daily-offer.html">Daily Offer</a>
       <a href="bookings.html">Bookings</a>
+      <a href="daily-offer.html">Daily Offer</a>
     </nav>
 
+    <!-- Language Toggle -->
     <div class="language">
       <a href="#">EN</a> | <a href="#">DE</a>
     </div>
 
-    <div class="menu-icon">
-      <button class="action-button">☰</button>
-    </div>
+    <!-- Action Button -->
+    <button class="menu-button">☰</button>
   </header>
 
-  <!-- Main Section: Image Links -->
+  <!-- Main Section with Links -->
   <section class="main-links">
-    <a class="link-box" href="takeaway.html" style="background-image: url('images/takeaway.jpg');">
+    <a href="takeaway.html" class="link-box" style="background-image: url('images/takeaway.jpg');">
       Take Away
     </a>
 
-    <a class="link-box" href="gastro.html" style="background-image: url('images/gastro.jpg');">
+    <a href="gastro.html" class="link-box" style="background-image: url('images/gastro.jpg');">
       Gastro
     </a>
   </section>
